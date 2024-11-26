@@ -83,7 +83,7 @@ char	**ft_split(char const *s, char c)
 	}
 	return (strs);
 }
-
+/*
 #include <stdio.h>
 int main ()
 {
@@ -98,4 +98,4 @@ int main ()
 	}
 	return (0);
 }
-
+*/
