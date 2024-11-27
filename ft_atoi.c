@@ -16,9 +16,7 @@ const char	*isspaces(const char *str)
 
 	p = 0;
 	while (str[p] == ' ' || (str[p] >= '\t' && str[p] <= '\r'))
-	{
 		++p;
-	}
 	return (str + p);
 }
 
@@ -34,13 +32,9 @@ int	signos(const char *str)
 	while (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-		{
 			++minus;
-		}
 		else if (*str == '+')
-		{
 			++plus;
-		}
 		++str;
 	}
 	if ((minus > 1 || plus > 1) || (minus == 1 && plus == 1))
