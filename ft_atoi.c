@@ -16,9 +16,7 @@ const char	*isspaces(const char *str)
 
 	p = 0;
 	while (str[p] == ' ' || (str[p] >= '\t' && str[p] <= '\r'))
-	{
 		++p;
-	}
 	return (str + p);
 }
 
@@ -34,13 +32,9 @@ int	signos(const char *str)
 	while (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-		{
 			++minus;
-		}
-		else if (*str == '+')
-		{
+		if (*str == '+')
 			++plus;
-		}
 		++str;
 	}
 	if ((minus > 1 || plus > 1) || (minus == 1 && plus == 1))
@@ -54,6 +48,7 @@ int	ft_atoi(const char *str)
 {
 	int	result;
 	int	sign;
+	int overflow;
 
 	result = 0;
 	str = isspaces(str);
@@ -65,7 +60,10 @@ int	ft_atoi(const char *str)
 		result = result * 10 + (*str - '0');
 		++str;
 	}
-	return (result * sign);
+	result *= sign;
+	if (result < -2147483648 || result > 2147483647)
+		return (0);
+	return (result);
 }
 
 /*
