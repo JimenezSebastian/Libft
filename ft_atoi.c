@@ -33,7 +33,11 @@ int	signos(const char *str)
 	{
 		if (*str == '-')
 			++minus;
+<<<<<<< HEAD
 		if (*str == '+')
+=======
+		else if (*str == '+')
+>>>>>>> 8734eb0ef3f3136046116d237dee47a45bbb0825
 			++plus;
 		++str;
 	}
