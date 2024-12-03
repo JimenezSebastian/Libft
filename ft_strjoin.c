@@ -18,13 +18,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*ptr;
 
 	s3 = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	ptr = s3;
-	if (!str)
+	if (!s3)
 		return (NULL);
+	ptr = s3;
 	while (*s1)
 		*(s3++) = *(s1++);
 	while (*s2)
-		*(s2++) = *(s2++);
+		*(s3++) = *(s2++);
 	*s3 = '\0';
 	return (ptr);
 }
