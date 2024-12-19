@@ -60,8 +60,6 @@ int	ft_atoi(const char *str)
 		++str;
 	}
 	result *= sign;
-	if (result < -2147483648 || result > 2147483647)
-		return (0);
 	return (result);
 }
 
