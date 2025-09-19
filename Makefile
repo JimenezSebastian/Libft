@@ -10,27 +10,32 @@
 #                                                                              #
 # **************************************************************************** #
 
+NAME = libft.a
 LIB = ar rcs
 RM = rm -f
 
 CC = gcc
 CCFLAGS = -Wall -Wextra -Werror
 
-NAME = libft.a
-SRC =	ft_memset.c ft_bzero.c ft_strlen.c ft_atoi.c ft_isdigit.c ft_isalpha.c\
-ft_isprint.c ft_isascii.c ft_isalnum.c ft_memchr.c ft_memcpy.c \
-ft_memcmp.c ft_memmove.c ft_strchr.c ft_strdup.c ft_strlcat.c ft_strlcpy.c\
-ft_strncmp.c ft_toupper.c ft_tolower.c ft_strnstr.c ft_strrchr.c ft_calloc.c\
-ft_putchar_fd.c ft_putstr_fd.c ft_putnbr_fd.c ft_putendl_fd.c ft_substr.c\
-ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_itoa.c ft_split.c ft_striteri.c ft_strcat.c
+SRC =  Src/ft_atoi.c Src/ft_bzero.c Src/ft_calloc.c Src/ft_isalnum.c \
+       Src/ft_isalpha.c Src/ft_isascii.c Src/ft_isdigit.c Src/ft_isprint.c \
+       Src/ft_itoa.c Src/ft_memchr.c Src/ft_memcmp.c Src/ft_memcpy.c \
+       Src/ft_memmove.c Src/ft_memset.c Src/ft_putchar_fd.c Src/ft_putendl_fd.c \
+       Src/ft_putnbr_fd.c Src/ft_putstr_fd.c Src/ft_split.c Src/ft_strcat.c \
+       Src/ft_strchr.c Src/ft_strdup.c Src/ft_striteri.c Src/ft_strjoin.c \
+       Src/ft_strlcat.c Src/ft_strlcpy.c Src/ft_strlen.c Src/ft_strmapi.c \
+       Src/ft_strncmp.c Src/ft_strnstr.c Src/ft_strrchr.c Src/ft_strtrim.c \
+       Src/ft_substr.c Src/ft_tolower.c Src/ft_toupper.c
+
+BONUSSRC = Src/ft_lstadd_back_bonus.c Src/ft_lstadd_front_bonus.c \
+           Src/ft_lstclear_bonus.c Src/ft_lstdelone_bonus.c \
+           Src/ft_lstiter_bonus.c Src/ft_lstlast_bonus.c \
+           Src/ft_lstmap_bonus.c Src/ft_lstnew_bonus.c Src/ft_lstsize_bonus.c
+
 OBJ = $(SRC:.c=.o)
-INCLUDE = libft.h
-
-BONUSSRC = ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c\
-ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c\
-ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c\
-
 BONUSOBJ = $(BONUSSRC:.c=.o)
+
+INCLUDE = Includes/Libft.h
 
 all: $(NAME)
 
