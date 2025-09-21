@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Includes/Libft.h"
+#include "../includes/libft.h"
 
 const char	*isspaces(const char *str)
 {

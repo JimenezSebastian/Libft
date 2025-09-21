@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../Includes/Libft.h"
+#include "../includes/libft.h"
 
 static int	ft_char_in_set(char c, char const *set)
 {

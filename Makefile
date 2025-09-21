@@ -17,25 +17,25 @@ RM = rm -f
 CC = gcc
 CCFLAGS = -Wall -Wextra -Werror
 
-SRC =  Src/ft_atoi.c Src/ft_bzero.c Src/ft_calloc.c Src/ft_isalnum.c \
-       Src/ft_isalpha.c Src/ft_isascii.c Src/ft_isdigit.c Src/ft_isprint.c \
-       Src/ft_itoa.c Src/ft_memchr.c Src/ft_memcmp.c Src/ft_memcpy.c \
-       Src/ft_memmove.c Src/ft_memset.c Src/ft_putchar_fd.c Src/ft_putendl_fd.c \
-       Src/ft_putnbr_fd.c Src/ft_putstr_fd.c Src/ft_split.c Src/ft_strcat.c \
-       Src/ft_strchr.c Src/ft_strdup.c Src/ft_striteri.c Src/ft_strjoin.c \
-       Src/ft_strlcat.c Src/ft_strlcpy.c Src/ft_strlen.c Src/ft_strmapi.c \
-       Src/ft_strncmp.c Src/ft_strnstr.c Src/ft_strrchr.c Src/ft_strtrim.c \
-       Src/ft_substr.c Src/ft_tolower.c Src/ft_toupper.c
+SRC =  src/ft_atoi.c src/ft_bzero.c src/ft_calloc.c src/ft_isalnum.c \
+       src/ft_isalpha.c src/ft_isascii.c src/ft_isdigit.c src/ft_isprint.c \
+       src/ft_itoa.c src/ft_memchr.c src/ft_memcmp.c src/ft_memcpy.c \
+       src/ft_memmove.c src/ft_memset.c src/ft_putchar_fd.c src/ft_putendl_fd.c \
+       src/ft_putnbr_fd.c src/ft_putstr_fd.c src/ft_split.c src/ft_strcat.c \
+       src/ft_strchr.c src/ft_strdup.c src/ft_striteri.c src/ft_strjoin.c \
+       src/ft_strlcat.c src/ft_strlcpy.c src/ft_strlen.c src/ft_strmapi.c \
+       src/ft_strncmp.c src/ft_strnstr.c src/ft_strrchr.c src/ft_strtrim.c \
+       src/ft_substr.c src/ft_tolower.c src/ft_toupper.c
 
-BONUSSRC = Src/ft_lstadd_back_bonus.c Src/ft_lstadd_front_bonus.c \
-           Src/ft_lstclear_bonus.c Src/ft_lstdelone_bonus.c \
-           Src/ft_lstiter_bonus.c Src/ft_lstlast_bonus.c \
-           Src/ft_lstmap_bonus.c Src/ft_lstnew_bonus.c Src/ft_lstsize_bonus.c
+BONUSsRC = src/ft_lstadd_back_bonus.c src/ft_lstadd_front_bonus.c \
+           src/ft_lstclear_bonus.c src/ft_lstdelone_bonus.c \
+           src/ft_lstiter_bonus.c src/ft_lstlast_bonus.c \
+           src/ft_lstmap_bonus.c src/ft_lstnew_bonus.c src/ft_lstsize_bonus.c
 
 OBJ = $(SRC:.c=.o)
 BONUSOBJ = $(BONUSSRC:.c=.o)
 
-INCLUDE = Includes/Libft.h
+INCLUDE = includes/Libft.h
 
 all: $(NAME)
 
