@@ -35,7 +35,7 @@ BONUSsRC = src/ft_lstadd_back_bonus.c src/ft_lstadd_front_bonus.c \
 OBJ = $(SRC:.c=.o)
 BONUSOBJ = $(BONUSSRC:.c=.o)
 
-INCLUDE = includes/Libft.h
+INCLUDE = include/libft.h
 
 all: $(NAME)
 
